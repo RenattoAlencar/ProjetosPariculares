@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>QRCode e Whatsapp</title>
+</head>
+<body>
+<style>
+
+
+
+</style>
+
+  
+  <div id="qrcode"></div>
+
+<!--6 teste Whats e Qrcode-->
+
+  <script src="qrcode.min.js"></script>
+  <script>
+  new QRCode(document.querySelector('#qrcode'),{
+    text: ' LINK API DO WHATS',
+    width: 128,
+    height: 128,
+    colorDark : '#4B088A',
+    colorLight : '#BCA9F5',
+    correctLevel : QRCode.CorrectLevel.H
+  })
+   
+  </script>
+</body>
+</html>
